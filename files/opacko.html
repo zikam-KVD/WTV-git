@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>Cvičení pro opakování</title>
+  <link href="styl.css" rel="stylesheet">
+  <style>
+    header{width:1028px;margin:auto;margin-bottom:25px;}
+    header h1, header h2{text-align:center;font-size:.1.1em;margin:10px;}
+    .pulka{width:50%;float:left;}
+    span.prvky{display:block;cursor:move;margin:5px;font-size:15px;}
+    .margin_1{margin-left:2em}
+    .margin_2{margin-left:4em}    
+    #obal_prvky{border: 1px solid black;padding: 5px;margin-top: 15px;}  
+    p{margin:15px 0;}
+  </style>
+          
+  <script src="script/jquery.js"></script>
+  <script src="script/jquery_ui.js"></script>
+  <script async="" src="script/script.js"></script>
+  
+  </head>
+  <body style="font-size:1.4em">
+    <header>
+        <h1>Struktura HTML</h1>
+        <h2>zajímavější formou</h2>
+    </header>
+    
+    <main style="width:1000px;margin:auto;">
+        
+        <div style="width:50%;float:left;">
+            <div class="pulka">
+                <div id="obal_prvky">
+                  <!-- potreba promíchat -->                  
+                  <span class="prvky" data-id="3">kódování</span>
+                  <span class="prvky" data-id="4">titulek stránky</span>
+                  <span class="prvky" data-id="2">hlavička</span>
+                  <span class="prvky" data-id="1">deklarace dokumentu</span>
+                  <span class="prvky" data-id="5">tělo stránky</span>
+                </div>
+            </div>
+            <div id="dopln" class="pulka_x">
+                <div class="drop" data-id="1"></div>
+                <div class="drop" data-id="2"></div>
+                <div class="drop" data-id="3"></div>
+                <div class="drop" data-id="4"></div>
+                <div class="drop" data-id="5"></div>
+            </div>
+            <div id="informace" class="hide">
+                <div><p>Informace pro prohlížeč, aby věděl s jakým typem souboru pracuje.</p></div>
+                <div><p>Vymezuje veškerý obsah stránky.</p></div>
+                <div><p>Obsahuje další informace, titulek stránky, připojené pomocné soubory - pravidla zobrazení, skripty aj.  </p></div>
+                <div><p>Hlavní viditelná část stránek, převážně texty a obrázky.</p></div>
+            </div>
+            
+        </div>
+        
+        <div class="pulka" style="font-family: monospace;font-weight:bold;">
+        <p class="orange">&lt;!DOCTYPE html&gt;</p>
+        <p class="green">&lt;html&gt;</p>
+            <!-- hlavicka -->
+            <p class="margin_1 blue">&lt;head&gt;</p>
+            
+            <p class="margin_2 brown">&lt;meta charset="UTF-8"&gt;</p>
+            <p class="margin_2 gray">&lt;title&gt;
+            
+            &lt;/title&gt;</p>     
+            <p class="margin_1 blue">&lt;/head&gt;</p>
+            
+            <!-- telo -->
+            <p class="margin_1 purple">&lt;body&gt;</p>
+            <p class="margin_1 purple">&lt;/body&gt;</p>
+        <p class="green">&lt;/html&gt;</p>
+        </div>         
+        
+    </main>
+  </body>
+</html>

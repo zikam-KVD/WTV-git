@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/styl.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="../index.html" class="logo"> &lt;HTML&gt; </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <article class="row">
+
+            <div class="col-12">
+                <h1>CSS3 a jeho nové vlastnosti</h1>
+                <p>Nová verze CSS3 je ještě obsáhlejší než HTML5 a dovede stránky více rozpohybovat než dřívější verze.
+                    K tomu se dříve využíval Flash, který nyní není již podporován ze strany problížečů. Nicméně mezi
+                    nejdůležitější nová pravidla jsou pravidal
+                    týkající se <strong>flexu</strong>, což je nový typ zobrazení elementu - jeho potomci jsou
+                    responzivně umisťováni. Tedy tak, že se přitom bere v potaz velikost displeje.
+                </p>
+            </div>
+
+            <div class="col-12">
+                <h1>Flex box</h1>
+                <p>Jedná se o vlastnost, na které stojí mnoho responzibilních frameworků, např. BootStrap i W3.CSS, a
+                    která v kombinaci s dal39mi pravidlz částečně narazuje dřívější varianty pravidla <code>display</code>.</p>
+                    <ul>
+                        <li>
+                            <strong>flex-direction: </strong> definuje směr rozmístění prvků.
+                            <ul class="without">
+                                <li>
+                                    <em>row</em>
+                                    <div class="flex-row" style="flex-direction: row !important">
+                                        <div class="flex-square">1</div>
+                                        <div class="flex-square">2</div>
+                                        <div class="flex-square">3</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em>row-reverse</em>
+                                    <div class="flex-row" style="flex-direction: row-reverse !important">
+                                        <div class="flex-square">1</div>
+                                        <div class="flex-square">2</div>
+                                        <div class="flex-square">3</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em>column</em>
+                                    <div class="flex-row" style="flex-direction: column !important">
+                                        <div class="flex-square">1</div>
+                                        <div class="flex-square">2</div>
+                                        <div class="flex-square">3</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>flex-wrap: </strong> určuje, jak se potomci budou chovat, když nemají dostatek místa.
+                            <li>
+                                <em>wrap</em>
+                                <div class="flex-row" style="width: 80px; flex-wrap: wrap !important">
+                                    <div class="flex-square">1</div>
+                                    <div class="flex-square">2</div>
+                                    <div class="flex-square">3</div>
+                                </div>
+                            </li>
+                            <li>
+                                <em>wrap-reverse</em>
+                                <div class="flex-row" style="width: 80px; flex-wrap: wrap-reverse !important">
+                                    <div class="flex-square">1</div>
+                                    <div class="flex-square">2</div>
+                                    <div class="flex-square">3</div>
+                                </div>
+                            </li>
+                            <li>
+                                <em>nowrap</em>
+                                <div class="flex-row" style="width: 80px; flex-wrap: nowrap !important">
+                                    <div class="flex-square">1</div>
+                                    <div class="flex-square">2</div>
+                                    <div class="flex-square">3</div>
+                                </div>
+                            </li>
+                        </li>
+                        <li>
+                            <strong>justify-content: </strong> pravidlo pro rozmistování prvků v prostoru rodiče.
+                            <ul class="without">
+                                <li>
+                                    <em>center</em>
+                                    <div class="flex-row" style="justify-content: center !important">
+                                        <div class="flex-square">1</div>
+                                        <div class="flex-square">2</div>
+                                        <div class="flex-square">3</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em>flex-end</em>
+                                    <div class="flex-row" style="justify-content: flex-end !important">
+                                        <div class="flex-square">1</div>
+                                        <div class="flex-square">2</div>
+                                        <div class="flex-square">3</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em>flex-start</em>
+                                    <div class="flex-row" style="justify-content: flex-start !important">
+                                        <div class="flex-square">1</div>
+                                        <div class="flex-square">2</div>
+                                        <div class="flex-square">3</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em>space-between</em>
+                                    <div class="flex-row" style="justify-content: space-between !important">
+                                        <div class="flex-square">1</div>
+                                        <div class="flex-square">2</div>
+                                        <div class="flex-square">3</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em>space-around</em>
+                                    <div class="flex-row" style="justify-content: space-around !important">
+                                        <div class="flex-square">1</div>
+                                        <div class="flex-square">2</div>
+                                        <div class="flex-square">3</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>align-items: </strong> vertikální zarovnání potomků.
+                            <ul class="without">
+                                <li>
+                                    <em>flex-start</em>
+                                    <div class="flex-row" style="height:100px; align-items: flex-start !important">
+                                        <div class="flex-square">1</div>
+                                        <div class="flex-square">2</div>
+                                        <div class="flex-square">3</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em>flex-end</em>
+                                    <div class="flex-row" style="height:100px; align-items: flex-end !important">
+                                        <div class="flex-square">1</div>
+                                        <div class="flex-square">2</div>
+                                        <div class="flex-square">3</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em>center</em>
+                                    <div class="flex-row" style="height:100px; align-items: center !important">
+                                        <div class="flex-square">1</div>
+                                        <div class="flex-square">2</div>
+                                        <div class="flex-square">3</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+
+            <div class="col-12 text-center">
+                <small>Velice pěkný přehled více nových vlastností je na webu <a
+                        href="https://www.vzhurudolu.cz/prirucka/css3">VzhůruDolů.cz</a>.</small>
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row position-relative">
+                <img src="../images/css3-logo.png" alt="Co když se nenačtu?" class="position-absolute top-right">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/styl.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="../index.html" class="logo"> &lt;HTML&gt; </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <article class="row">
+
+            <div class="col-12">
+                <h1>HTML5 a jeho nové prvky</h1>
+                <p>HTML5 je nová verze značkovacího jazyka HTML, která byla vydána v roce 2014 jako "slučující" verze
+                    pro XHTML a HTML 4.01. Proč slučující? XHTML a HTML 4.01 měly jiné požadavky na zápis, což
+                    mohlo být potenciálním rizikem pro nezobrazení stránky. Vizí HTML5 je usnadnit vývojářům práci. :)
+                </p>
+            </div>
+
+            <div class="col-12">
+                <h1>&lt;!DOCTYPE&gt;</h1>
+                <dl>
+                    <dt>XHTML</dt>
+                    <dd><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;</code>
+                    </dd>
+                    <dt>HTML 4.01</dt>
+                    <dd><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</code>
+                    </dd>
+                    <dt>HTML5</dt>
+                    <dd><code>&lt;!DOCTYPE html&gt;</code></dd>
+                </dl>
+            </div>
+
+            <div class="col-12">
+                <h1>Nové elementy</h1>
+                <p>Největší novinkou byly pravděpodobné nové strukturární a sémantické prvky, které nahradily univerzální element
+                    <code>&lt;div&gt;</code>. Co znamená <strong>sémantické</strong>? To znamená, že jsou čitelnější pro
+                    roboty, kteří prohlížejí a indexují stránky pro vyhledávače.</p>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <h2>&lt;header&gt;</h2>
+                        <p>Záhlaví stránky ve smyslu viditelné hlavičky webu.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h2>&lt;main&gt;</h2>
+                        <p>Vymezuje hlavní obsah stránky.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h2>&lt;article&gt;</h2>
+                        <p>Definuje oblast článku.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h2>&lt;section&gt;</h2>
+                        <p>Sekce - využívá se pro více účelů. Např. archiv, přehled článků, TOP5 aj..</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h2>&lt;aside&gt;</h2>
+                        <p>Vedlejší obsah, který moc nesouvisí s hlavním obsahem webu. Např. reklama.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h2>&lt;footer&gt;</h2>
+                        <p>Patička webu.</p>
+                    </div>
+                    <div class="col-12">
+                        <p>Novými prvky HTML jsou také: <code>&lt;code&gt;,&lt;strong&gt;,&lt;em&gt;,&lt;acronym&gt;,&lt;mark&gt;</code> aj..</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 text-center">
+                <h2>Ukázka layoutu s novými strukturálními elementy</h2>
+                <img src="../images/layout_html5.png" alt="HTML5 layout">
+            </div>
+
+            <div class="col-12">
+                <p>Nepárové tagy nemusí končit <strong>/></strong> <small>(na to si furt nemohu moc zvyknout)</small> a
+                    spoustu atributů bylo zvoleno jako nepovinné. Takže např:</p>
+                <ul class="without">
+                    <li>
+                        <code>&lt;br <strong class="c-red">/</strong>&gt;</code>
+                        <i class="fa fa-arrow-right m-l-2 m-r-2"></i>
+                        <code>&lt;br&gt;</code>
+                    </li>
+                    <li>
+                        <code>&lt;img src="X" alt="X" <strong class="c-red">/</strong>&gt;</code>
+                        <i class="fa fa-arrow-right m-l-2 m-r-2"></i>
+                        <code>&lt;img src="X" alt="X"&gt;</code>
+                    </li>
+                    <li>
+                        <code>&lt;link rel="stylesheet" <strong class="c-red">type="text/css"</strong> href="X"&gt;</code>
+                        <i class="fa fa-arrow-right m-l-2 m-r-2"></i>
+                        <code>&lt;link rel="stylesheet" href="X"&gt;</code>
+                    </li>
+                    <li>
+                        <code>&lt;script <strong class="c-red">type="text/javascript"</strong>&gt;</code>
+                        <i class="fa fa-arrow-right m-l-2 m-r-2 "></i>
+                        <code>&lt;script&gt;</code>
+                    </li>
+                </ul>
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row position-relative">
+                <img src="../images/html_logo.png" alt="Co když se nenačtu?" class="position-absolute top-right">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

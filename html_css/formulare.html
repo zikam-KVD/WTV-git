@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formuláře</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/styl.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="../index.html" class="logo"> &lt;HTML&gt; </a>
+                    <a href="tabulky.html" class="float-right m-r-1" title="Tabulkuj!"> <i class="fa fa-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <article class="row">
+            <div class="col-12">
+                <h1>Posíláme data ze stránky na server</h1>
+                <p>Pro odesílání jakýchkoliv dat na server se využívají formuláře, které obsahují vstupní pole -
+                    nepárové elementy <code>&lt;input&gt;</code>. ty mohou mít více vlastností, atributů, co ovlivňují
+                    jejich chování.</p>
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+<code><pre>
+&lt;form action="stranka.php" method="POST"&gt;
+    &lt;input type="text" name="jmeno" value="hodnota"&gt;
+    &lt;input type="button" value="Text tlačítka"&gt;
+&lt;/form&gt;
+</pre></code>
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <form action="stranka.php" method="POST">
+                    <input type="text" name="jmeno" value="hodnota"><br>
+                    <input type="button" value="Text tlačítka">
+                </form>
+            </div>
+
+            <div class="col-12">
+                <h2>Základní typy inputů</h2>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h3>Textové vstupní pole</h3>
+                <p><strong>type="text"</strong></p>
+                <input type="text" />
+                <ul>
+                    <li>placeholder="" - popis, ukázkový text...</li>
+                    <li>maxlength="" - max. délka textu</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h3>Číselné vstupní pole</h3>
+                <p><strong>type="number"</strong></p>
+                <input type="number" />
+                <ul>
+                    <li>min="" - minimální hodnota</li>
+                    <li>max="" - maximální hodnota</li>
+                    <li>step="" - krokování pomocí šipek</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h3>Vstupní pole pro heslo</h3>
+                <p><strong>type="password"</strong></p>
+                <input type="password" />
+                <ul>
+                    <li>placeholder="" - popis, ukázkový text...</li>
+                    <li>maxlength="" - max. délka textu</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h3>Vstupní pole pro soubor</h3>
+                <p><strong>type="file"</strong><br> Pokročilejší pracování na úrovni PHP.</p>
+                <input type="file" />
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h3>Zaškrtávací pole</h3>
+                <p><strong>type="checkbox"</strong><br>Doplňuje se o tag <em>label</em>.</p>
+                <label for="hambac">Hambáč: <label><input id="hambac" type="checkbox">
+                        <label for="parek">Párek: <label><input id="parek" type="checkbox">
+                                <label for="steak">Steak: <label><input id="steak" type="checkbox">
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h3>Výběrové pole</h3>
+                <p><strong>type="radio"</strong><br>Doplňuje se o tag <em>label</em>.</p>
+                <label for="tat">Tatarka: <label><input id="tat" type="radio" name="jidlo">
+                        <label for="hor">Hořčice: <label><input id="hor" type="radio" name="jidlo">
+                                <label for="kec">Kečup: <label><input id="kec" type="radio" name="jidlo">
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h3>Tlačítko</h3>
+                <p><strong>type="submit"</strong></p>
+                <input type="submit" />
+            </div>
+
+            <div class="col-12">
+                <h2>Zpracování formulářů</h2>
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <h3>Metoda GET</h3>
+                <form method="GET" action="zaklad.html">
+                    <input type="text" name="input_1" placeholder="Tenhle text zmizí při psaní" /><br>
+                    <input type="text" name="input_2" value="Tenhle text nezmizí" /><br>
+                    <input type="submit" name="sub_1" value="OK!" />
+                </form>
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <h3>Metoda POST</h3>
+                <form method="POST" action="zaklad.html">
+                    <input type="text" name="input_1" placeholder="Tenhle text zmizí při psaní" /><br>
+                    <input type="text" name="input_2" value="Tenhle text nezmizí" /><br>
+                    <input type="submit" name="sub_1" value="OK!" />
+                </form>
+            </div>
+
+            <div class="col-12">
+                <h2>Grafické upravení inputů</h2>
+            </div>
+
+            <div class="col-lg-4 col-sm-12">
+                <form id="formular_1" method="post" action="graficke_upravy.html">
+                    <input type="search" placeholder="Hledej...">
+                    <input type="submit" value="OK!" />
+                </form>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <form id="formular_2" method="post" action="graficke_upravy.html">
+                    <input type="submit" value="Praha" />
+                    <input type="submit" value="Plzeň" />
+                </form>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <form id="formular_3" method="post" action="graficke_upravy.html">
+                    <input type="password" placeholder="Heslo?" />
+                    <input type="submit" value="OK!" />
+                </form>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <form id="formular_4" method="post" action="graficke_upravy.html">
+                    <input type="text" placeholder="Piš sem..." />
+                    <input type="submit" value="OK!" />
+                </form>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <form id="formular_5" method="post" action="graficke_upravy.html">
+                    <input type="submit" value="Jsem jenom jedno tlačíko..." />
+                </form>
+            </div>
+
+            <div class="col-lg-4 col-sm-12">
+                <form id="formular_6" method="post" action="graficke_upravy.html">
+                    <label for="pri_0" class="container">
+                        <input type="radio" id="pri_0" name="piti" value="0">Coca-Cola
+                        <span class="radio"></span>
+                    </label>
+                    <label for="pri_1" class="container">
+                        <input type="radio" id="pri_1" name="piti" value="1">Sprite
+                        <span class="radio"></span>
+                    </label>
+                </form>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <form id="formular_7" method="post" action="graficke_upravy.html">
+                    <label for="check_0" class="container">
+                        <input type="checkbox" id="check_0" name="jidlo" value="0">řízek
+                        <span class="checkbox"></span>
+                    </label>
+                    <label for="check_1" class="container">
+                        <input type="checkbox" id="check_1" name="jidlo" value="1">guláš
+                        <span class="checkbox"></span>
+                    </label>
+                </form>
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row position-relative">
+                <div class="col-12">
+
+                </div>
+                <img src="../images/html_logo.png" alt="Co když se nenačtu?" class="position-absolute top-right">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

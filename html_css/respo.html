@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Respontibilita</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/styl.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="../index.html" class="logo"> &lt;HTML&gt; </a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <article class="row">
+
+            <div class="col-12">
+                <h1>Resnponzibilita - přizpůsobení pro různé displeje</h1>
+                <p>Jak zajistit, aby se stránky zobrazovaly jinak pro malé displeje, např. pro mobily a tablety? Za
+                    tímto účelem se využívají balíčky, které
+                    potřebné chování zajistí. My je jen musíme načíst v <code>&lt;head&gt;</code> a upravit trochu
+                    strukturu stránek.
+                </p>
+            </div>
+
+            <div class="col-12">
+                <h2>Viewport</h2>
+                <p>Jedná se o metatag (tzn. obsahuje informace pro stránku), který prohlížeči sděluje informace o
+                    rozměrech a měřítkách stránky. Vkládá se do hlavičky stránek.</p>
+                <code>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                </code>
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <h2>Bootstrap</h2>
+                <p>Jedná se o poměrně robustní framework od vývojářů Twitteru, který byl vydán již v roce 2011.</p>
+                <p>Oficiální dokumentace frameworku je <a href="https://www.w3schools.com/w3css/">zde</a>.</p>
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <h2>W3.CSS</h2>
+                <p>Relativně jednodušší na pochopení principů. Využívá obdobný grid systém, který je doplněn o lehčí variantu.</p>
+                <p>Oficiální dokumentace frameworku je <a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/">zde</a>.</p>
+            </div>
+
+            <div class="col-12">
+                <p><strong>Bootstrap</strong> i <strong>W3.CSS</strong> využívají tzv. <strong>grid systém</strong> pro
+                    rozmístění elementů na stránce, jen k tomu využívají jinak předdefinované css třídy.</p>
+                <img src="../images/grid-system.png" alt="grid system">
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row position-relative">
+                <div class="position-absolute top-right">
+                    <span class="fa fa-5x fa-desktop"></span>&nbsp;&nbsp;
+                    <span class="fa fa-5x fa-tablet"></span>&nbsp;&nbsp;
+                    <span class="fa fa-5x fa-mobile"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

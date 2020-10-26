@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabulkuj!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/styl.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="../index.html" class="logo"> &lt;HTML&gt; </a>
+                    <a href="formulare.html" class="float-right m-l-1" title="Vstupní data"> <i class="fa fa-arrow-right"></i> </a>
+                    <a href="listy.html" class="float-right m-r-1" title="Děláme si seznamy"> <i class="fa fa-arrow-left"></i> </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <article class="row">
+            <div class="col-12">
+                <h1>K čemu tabulky?</h1>
+                <p>V pradávných dobách se pomocí tabulek vytvářela struktura stránek a jejich design. Dneska se
+                    využívají hlavně pro zobrazení dat se vzájemnými vztahy.</p>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <style>
+                    table {width: 300px;margin: auto;}                
+                    table tr td,table tr th {padding: 10px;border: 1px solid black;}
+                    table tr:nth-child(even) {background: rgba(125, 0, 0, 0.2);}
+                    table tr:nth-child(odd) {background: rgba(0, 125, 0, 0.2);}
+                </style>
+                <table>
+                    <tr>
+                        <th>Stát</th>
+                        <th>CZ</th>
+                        <th>GER</th>
+                        <th>FRA</th>
+                    </tr>
+                    <tr>
+                        <th>Česká republika</th>
+                        <td>-</td>
+                        <td>7:5</td>
+                        <td>12:8</td>
+                    </tr>
+                    <tr>
+                        <th>Německo</th>
+                        <td>5:7</td>
+                        <td>-</td>
+                        <td>3:6</td>
+                    </tr>
+                    <tr>
+                        <th>Francie</th>
+                        <td>8:12</td>
+                        <td>6:3</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+<pre><code>&lt;table&gt;
+    ...
+    &lt;tr&gt;
+        &lt;th&gt;Česká republika&lt;/th&gt;
+        &lt;td&gt;-&lt;/td&gt;
+        &lt;td&gt;7:5&lt;/td&gt;
+        &lt;td&gt;12:8&lt;/td&gt;
+    &lt;/tr&gt;
+    ...
+&lt;/table&gt;</code></pre>
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row position-relative">
+                <div class="col-12">
+                    <hr>
+                    <p><span class="goal">Cíl lekce:</span> využiješ na webu nějakou tabulku?</p>
+                </div>
+                <img src="../images/html_logo.png" alt="Co když se nenačtu?" class="position-absolute top-right">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

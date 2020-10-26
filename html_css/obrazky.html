@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skládáme divy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/styl.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="../index.html" class="logo"> &lt;HTML&gt; </a>
+                    <a href="jsme_vyvojari.html" class="float-right m-l-1" title="Jsme vývojáři"> <i
+                            class="fa fa-arrow-right"></i> </a>
+                    <a href="div.html" class="float-right m-r-1" title="Skládáme divy"> <i class="fa fa-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <article class="row">
+            <div class="col-12">
+                <h1>Obrázky</h1>
+                <p>S obrázky můžeme pracovat v HTML souboru, ale i v CSS pravidlech. <strong>Při načítání obrázků je
+                        potřeba kontrolovat jejich umístění.</strong></p>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <h1>Element &lt;img&gt;</h1>
+                <p>Nepárový tag zobrazující obrázek v HTML souboru. Má dvě potřebné vlastnosti (atributy):</p>
+                <dl>
+                    <dd><strong>src</strong> - obsahuje cestu k obrázku, který se má zobrazit.</dd>
+                    <dd><strong>alt</strong> - alternativní text. Zobrazí se, pokud se obrázek nenačte.</dd>
+                </dl>
+                <p><code>&lt;img src="../images/superman.jpg" alt="Tady je logo Supermana"&gt;</code></p>
+                <p class="text-center"><img src="../images/superman.jpg" alt="Tady je logo Supermana"></p>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <h1>CSS pravidlo background</h1>
+                <p>Tohle pravidlo pracuje s obrázky tak, že je vkládá na pozadí daných elementů. Pravidlo
+                    <em>background</em> je zkrácené zapsání těchto pravidel.</p>
+                <dl>
+                    <dd><strong>backgound-color</strong> nastaví danému elementu barvu pozadí.</dd>
+                    <dd><strong>background-image:</strong> nastaví elementu obrázek na pozadí.</dd>
+                    <dd><strong>background-position:</strong> umístí obrázek na určenou pozici (osa x a y)</dd>
+                    <dd><strong>background-size:</strong> velikost obrázku na pozadí.</dd>
+                    <dd><strong>background-repeat:</strong> definuje, jak se bude obrázek opakovat na pozadí.</dd>
+                    <dd><strong>background-attachment:</strong> určuje chování obrázku při scrollování (pro
+                        tag &lt;body&gt;)</dd>
+                </dl>
+
+                <code>
+<pre>#boxSuperman{
+    background: url(../images/superman.jpg) center right no-repeat;
+}</pre>
+                </code>
+
+                <div id="boxSuperman">
+                    <p>Tohle je box s logem Supermana na pozadí.</p>
+                </div>
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row position-relative">
+                <div class="col-12">
+                    <hr>
+                    <p><span class="goal">Cíl lekce:</span> doplňte si na vhodná místa do layoutu stránek nějaké
+                        obrázky.</p>
+                    <p>Stáhněte tento soubor a upravte v něm obsažené soubory podle obrázků: <a
+                            href="../files/priklady-header.zip"><i class="fa fa-2x fa-download"></i></a></p>
+                </div>
+                <img src="../images/CSS3_and_HTML5_logo.png" alt="Co když se nenačtu?"
+                    class="position-absolute top-right">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

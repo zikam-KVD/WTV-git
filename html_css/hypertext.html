@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hypertextujeme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/styl.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="../index.html" class="logo"> &lt;HTML&gt; </a>                    
+                    <a href="styly.html" class="float-right m-l-1" title="Jsme styloví"> <i class="fa fa-arrow-right"></i> </a> 
+                    <a href="ahoj_svete.html" class="float-right m-r-1" title="Naše první stránka"> <i class="fa fa-arrow-left"></i> </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <article class="row">            
+            <div class="col-12">
+                <h1>Hypertext</h1>
+                <p>Umíme udělat jednoduché stránky a umíme tam dát už i nějaký ten text. Jak se ale dělá ten podtrhnutý modrý text, který odkazuje na jiné stránky?</p>
+                <p>K tomu se využívá párový tag &lt;a&gt;, který je již trochu komplikovanější. </p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h1>Odkaz - tag &lt;a&gt;</h1>
+                <p>Odkazy jsou realizovány pomocí tagu &lt;a&gt;, který se zapisuje takto:</p>
+                <p><code>&lt;a href="stranka.html"&gt;text kotvy&lt;/a&gt;</code></p>
+                <p><strong>Co je to ten href?</strong></p>
+                <!-- 
+                    
+                -->
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <h1>Kotva</h1>
+                <p>Je odkaz na tentýž stránku, jen na jinou její část. Vužívá se u delších textů, kdy prohlížeč automaticky zascrolluje na požadovanou část.</p>
+                <p>Schválně si to <a href="hypertext.html#kotva">vyzkoušejte!</a></p>
+                <p>HTML zápis kotvy vypadá následovně:</p>
+                <p><code>&lt;a href="stranka.html#kotva"&gt;text kotvy&lt;/a&gt;</code></p>
+                <p><strong>#kotva</strong> je značení, jakou kotvu má prohlížeč najít a zobrazit uživateli.</p>
+                <strong>Jak takovou kotvu ale zapsat do HTML kódu?</strong>
+                <!-- 
+
+                -->
+            </div>
+        </article>
+
+        
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <i class="fa fa-3x fa-anchor m-b-2 m-anchor" id="kotva"></i>
+            <div class="row position-relative">
+                <div class="col-12"><hr>
+                    <p><span class="goal">Cíl lekce:</span> rozčlenit zvolené téma, vytvořit další tránky a vzájemně je propojit odkazy.
+                    </p>
+                </div>
+                <img src="../images/html_logo.png" alt="Co když se nenačtu?" class="position-absolute top-right"> 
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

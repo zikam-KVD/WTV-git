@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jsme styloví</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/styl.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="../index.html" class="logo"> &lt;HTML&gt; </a>
+                    <a href="div.html" class="float-right m-l-1" title="Skládáme divy"> <i class="fa fa-arrow-right"></i></a>
+                    <a href="hypertext.html" class="float-right m-r-1" title="Hypertextujeme"> <i class="fa fa-arrow-left"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <article class="row">
+            <div class="col-12">
+                <h1>Vzhled našich stránek</h1>
+                <img src="../images/html_css.png" alt="joke" style="margin: auto; display: block;">
+                <p>Vzhled našim stránkám dodávají tzv. CSSS pravidla, známé jako CSS styly. Využívají se od nastavení
+                    rozměrů, změny barev až po realizaci různýh animací.</p>
+                <p>V našich stránkách je můžeme využít 3 způsoby:</p>
+                <ol>
+                    <li>
+                        <p>Psát je jako vlastnost (atribut) u požadovaného elementu.</p>
+                        <p></p>
+                        <code>&lt;span style="color:blue;font-size:25px"&gt;Tady je modrý text.&lt;/span&gt;</code>
+                        <span style="color:blue;font-size:25px">Tady je modrý text.</span></p>
+                    </li>
+                    <li>
+                        <p>Napsání párového tagu &lt;style&gt; v hlavičce stránky. Mezi otevírací a zavírací tag se
+                            píšou pravidla.</p>
+                        <pre>&lt;style&gt;
+body {background-color: green}
+p {
+    font-size: 15px;
+    color: red
+}
+&lt;/style&gt;</pre>
+                    </li>
+                    <li>
+                        <p>Použít svůj vlastní soubor s koncovkou <strong>.css</strong>, který se pak načítá v hlavičce
+                            stránky.</p>
+                        <p><code>&lt;link rel="stylesheet" href="../css/styl.css"&gt;</code></p>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <h1>Třídy</h1>
+                <p>Vlastnost elementu zapisovaná jako <strong>class="NázevTřídy"</strong>.</p>
+                <p>V pravidlech se rozpozná pomocí tečky a názvu.</p>
+                <code><strong>.zelenyText</strong>{color:green;}</code><br>
+                <code>&lt;p class="<strong>zelenyText</strong>"&gt;Zelený text pomocí třídy.&lt;/p&gt;</code>
+                <p class="zelenyText">Zelený text pomocí třídy.</p>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <h1>Identifikátory</h1>
+                <p>Unikátní označení elementu - na stránce nesmí být více stejných elementů se stejným označením. Už ho
+                    známe z používání kotev.</p>
+                <p><strong># se píše pomocí pravého Alt + x</strong></p>
+                <code><strong>#cerveneTucne</strong>{color:red; font-weight:bolder;}</code><br>
+                <code>&lt;p id="<strong>cerveneTucne</strong>"&gt;Červený text pomocí ID.&lt;/p&gt;</code>
+                <p id="cerveneTucne">Červený text pomocí ID</p>
+            </div>
+
+            <div class="col-12 text-center">
+                <p>Přehled CSS vlastností lze najít <a href="https://www.w3schools.com/css/default.asp">tady</a>.</p>
+            </div>
+
+            
+
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row position-relative">
+                <div class="col-12"><hr>
+                    <p><span class="goal">Cíl lekce:</span> vyzkoušit si úpravu vzhledu pomocí CSS. Založit si soubor pravidel.</p>
+                </div>
+                <img src="../images/css3-logo.png" alt="Co když se nenačtu?" class="position-absolute top-right">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

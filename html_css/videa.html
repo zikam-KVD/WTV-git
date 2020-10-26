@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Videa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/styl.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="../index.html" class="logo"> &lt;HTML&gt; </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <article class="row">
+            <div class="col-12">
+                <h1>Vkládání videí</h1>
+                <p>Rozvržení stránek je tzv. <em>layout</em>. </p>
+            </div>
+
+            <div class="col-12">
+                <h1>YOUTUBE videa</h1>
+                <p>Nejjednodušší variantou variantou je vložení videí pomocí sociální sítě YouTube - automaticky nám
+                    vygeneruje upravitelný kód pro video na této platformě. Kód získáme po kliknutí na tlačítko
+                    <strong>Sdílet/Vložit</strong>.</strong></p>
+                <img src="../images/veideo_neo.png" alt="YouTube">
+            </div>
+
+            <div class="col-12">
+                <h1>Zobrazení videí na serveru</h1>
+                <p>Pro přehrávání video souborů, které máme (nejen) fyzicky na serveru se využívá element
+                    <code>&lt;video&gt;</code>, který je již podporován všemi prohlížeči. <storng>Co to znamená?
+                    </storng>
+                </p>
+                <p>Je vhodné mít video ve více formátech a odkazovat tam všechny.</p>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+<pre><code>&lt;video&gt;
+    &lt;source src="../files/videoFile.mp4" type="video/mp4"&gt;
+    &lt;source src="../files/videoFile.ogv" type="video/ogg"&gt;
+    &lt;source src="../files/videoFile.flv" type="video/flv"&gt;
+    Váš prohlížeč nepodporuje tento element.
+&lt;/video&gt;</code></pre>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <video controls>
+                    <source src="../files/videoFile.mp4" type="video/mp4">
+                    <source src="../files/videoFile.ogv" type="video/ogg">
+                    <source src="../files/videoFile.flv" type="video/flv">
+                    Váš prohlížeč nepodporuje tento element.
+                </video>
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row position-relative">
+                <img src="../images/html_logo.png" alt="Co když se nenačtu?" class="position-absolute top-right">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

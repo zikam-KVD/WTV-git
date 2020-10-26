@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Děláme si seznamy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/styl.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="../index.html" class="logo"> &lt;HTML&gt; </a>                    
+                    <a href="tabulky.html" class="float-right m-l-1" title="Tabulkuj!"> <i class="fa fa-arrow-right"></i> </a> 
+                    <a href="jsme_vyvojari.html" class="float-right m-r-1" title="Jsme vývojáři"> <i class="fa fa-arrow-left"></i> </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <article class="row">            
+            <div class="col-12">
+                <h1>Číslování, odrážky, seznamy... a další data.</h1>
+                <p>Někdy je potřeba vypsat pár dat do sloupečku tak, aby to nevypadalo úplně blbě. Jak na to?</p>
+            </div>    
+            <div class="col-md-6 col-sm-12">
+                <h1>Nesetříděný seznam</h1>
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;Hadrosaurus&lt;li&gt;
+    &lt;li&gt;Triceratops&lt;li&gt;
+&lt;/ul&gt;</code></pre>
+                <ul>
+                    <li>Brontosaurus</li>
+                    <li>Stegosaurus</li>
+                    <li style="list-style: circle;">Hadrosaurus</li>
+                    <li style="list-style: circle;">Triceratops</li>
+                    <li style="list-style: square">Tyrannosaurus (T-Rex)</li>
+                    <li style="list-style: square">Velociraptor</li>
+                </ul>
+            </div>     
+            
+            <div class="col-md-6 col-sm-12">
+                                <h1>Setříděný seznam</h1>
+<pre><code>&lt;ol&gt;
+    &lt;li&gt;Rozmixovat...&lt;li&gt;
+    &lt;li&gt;Rozpálit...&lt;li&gt;
+&lt;/ol&gt;</code></pre>
+                <ol>
+                    <li>Mouku, sůl, mléko a vejce rozmixujte.</li>
+                    <li>Rozpalte olej na pánvičce.</li>
+                    <li style="list-style: upper-roman;">Naneste naběračku směsi.</li>
+                    <li style="list-style: upper-roman;">Palačinku smažíme z obou stran.</li>
+                    <li style="list-style: simp-chinese-informal;">Na hotové palačinky naneste marmeládu, nebo nutellu!</li>
+                </ol>
+            </div>
+            <!-- 
+            <div class="col-md-4 col-sm-12">
+                <h1>Description list</h1>
+                <p>Speciální seznam pro termín a popis.<br><small>(Takřka už nepoužívaný.)</small></p>
+<pre><code>&lt;dl&gt;
+    &lt;dt&gt;Termín&lt;dt&gt;
+    &lt;dd&gt;Definice&lt;dt&gt;
+&lt;/dl&gt;</code></pre>
+                <dl>
+                    <dt>Spider-man</dt>
+                    <dd>Rok vzniku: 1962</dd>
+                    <dt>Wolverine</dt>
+                    <dd>Rok vzniku: 1963</dd>
+                    <dt>Thor</dt>
+                    <dd>Rok vzniku: 1962</dd>
+                    <dt>Iron Man</dt>
+                    <dd>Rok vzniku: 1963</dd>
+                    <dt>Daredevil</dt>
+                    <dd>Rok vzniku: 1964</dd>
+                    <dt>Captan America</dt>
+                    <dd>Rok vzniku: 1941</dd>
+                </dl>
+            </div>
+            -->
+            <div class="col-12">
+                <p>Vzhled odrážek a číslování je možné měnit pomocí CSS pravidla <code>list-style:</code></p>
+                <p>Seznamy se velice často používaly pro tvorbu menu, nyní se struktura tvoří pomocí <code>&lt;div&gt;</code>.</p>
+            </div>
+            
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row position-relative">
+                <div class="col-12"><hr>
+                    <p><span class="goal">Cíl lekce:</span> dalo by se na Vašich stránkách využít některý ze seznamů?</p>
+                </div>
+                <img src="../images/html_logo.png" alt="Co když se nenačtu?" class="position-absolute top-right">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
